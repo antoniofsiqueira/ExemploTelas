@@ -1,44 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:teste/widgets/navDrawer.dart';
+import '../widgets/navDrawer.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class Noticias extends StatefulWidget {
+   static String id = 'noticias_screen';
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Layout demo 01',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        platform: TargetPlatform.iOS,
-      ),
-      home: MyHomePage(title: 'Notícias'),
-    );
-  }
+  _NoticiasState createState() => _NoticiasState();
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
+class _NoticiasState extends State<Noticias> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: NavDrawer(),
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Notícias"),
         flexibleSpace: Container(
           decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -130,13 +105,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
     );
   }
 }
-
-    
