@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:teste/widgets/navDrawer.dart';
-class Publicacoes_Doc extends StatefulWidget {
-   static String id = 'publicacoes_screen';
+
+class PublicacoesDoc extends StatefulWidget {
+  static String id = 'publicacoes_screen';
   @override
-  _Publicacoes_DocState createState() => _Publicacoes_DocState();
+  _PublicacoesDocState createState() => _PublicacoesDocState();
 }
 
-class _Publicacoes_DocState extends State<Publicacoes_Doc> {
+class _PublicacoesDocState extends State<PublicacoesDoc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +22,149 @@ class _Publicacoes_DocState extends State<Publicacoes_Doc> {
                   colors: <Color>[Colors.blue[800], Colors.blue[300]])),
         ),
       ),
+      body: Container(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+          width: double.maxFinite,
+          child: ListView(
+            children: <Widget>[
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
+                child: ListTile(
+                  title: Text('Remoção - Classificação - Prévia',
+                      style: TextStyle(fontSize: 14)),
+                  trailing: Text(
+                    "30/01/2020",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 9),
+                  ),
+                  subtitle: Text(
+                    "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
+                    style: TextStyle(fontSize: 11),
+                  ),
+                ),
+              ),
+            ],
+          )),
     );
   }
 }

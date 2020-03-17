@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:badges/badges.dart';
 import '../pages/agenda.dart';
 import '../pages/beneficios.dart';
 import '../pages/carteirinha.dart';
@@ -16,19 +17,24 @@ class NavDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: <Widget>[
+        children: ListTile.divideTiles(context: context, tiles: [
           Container(
-            height: 100.0,
+            height: 110.0,
             child: DrawerHeader(
               child: Text(
                 'APROFEM',
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: <Color>[Colors.orange[800], Colors.orange[100]]),
                   color: Colors.blue,
-                  image: DecorationImage(
+                  /*image: DecorationImage(
                       fit: BoxFit.fill,
-                      image: AssetImage('assets/images/cover.jpg'))),
+                      image: AssetImage('assets/images/cover.jpg'))*/
+                      ),
             ),
           ),
           ListTile(
@@ -42,6 +48,11 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.developer_board),
             title: Text('Notícias'),
+            trailing: Badge(
+              badgeContent: Text("39"),
+              badgeColor: Colors.orange[200],
+              // child: Icon(Icons.error_outline),
+            ),
             onTap: () => {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => Noticias()))
@@ -50,6 +61,11 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.add_alert),
             title: Text('Notificações'),
+            trailing: Badge(
+              badgeContent: Text("11"),
+              badgeColor: Colors.orange[200],
+              //child: Icon(Icons.error_outline),
+            ),
             onTap: () => {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => Notificacoes()))
@@ -62,15 +78,20 @@ class NavDrawer extends StatelessWidget {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => Publicacoes_Servidor()))
+                      builder: (context) => PublicacoesServidor()))
             },
           ),
           ListTile(
             leading: Icon(Icons.art_track),
             title: Text('Publicações do DOC'),
+            trailing: Badge(
+              badgeContent: Text("15"),
+              badgeColor: Colors.orange[200],
+              //child: Icon(Icons.error_outline),
+            ),
             onTap: () => {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => Publicacoes_Doc()))
+                  MaterialPageRoute(builder: (context) => PublicacoesDoc()))
             },
           ),
           ListTile(
@@ -118,7 +139,7 @@ class NavDrawer extends StatelessWidget {
             title: Text('Sair'),
             onTap: () => {Navigator.of(context).pop()},
           ),
-        ],
+        ]).toList(),
       ),
     );
   }
