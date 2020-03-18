@@ -28,10 +28,11 @@ class _NotificacoesState extends State<Notificacoes> {
           children: const <Widget>[
              Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Seja bem-vindo(a) ao novo App APROFEM',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.center,
@@ -45,10 +46,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('ATENÇÃO: Aulas presenciais dos EADS de 29/03 serão on-line!',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -62,10 +64,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Greve no dia 18 de Março',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "13/02/2020",
                   textAlign: TextAlign.right,
@@ -79,10 +82,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Coronavírus pandemia',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -96,10 +100,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Novo evento na agenda aprofem',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -113,10 +118,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Reunião de representantes 03-03-2020',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -130,10 +136,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Espaço formação',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -147,14 +154,17 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Nova edição do jornal APROFEM dispponivél!',
                 style: TextStyle(fontSize: 14)),
+                
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
                   style: TextStyle(fontSize: 9),
+                  
                 ),
                 subtitle: Text(
                   "Janeiro/Fevereiro 2020",
@@ -164,10 +174,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Seja bem-vindo(a) ao novo App APROFEM',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -181,10 +192,11 @@ class _NotificacoesState extends State<Notificacoes> {
             ),
             Card(
               elevation: 5,
-              shape: Border(right: BorderSide(color: Colors.orange, width: 5)),
+              shape: Border(right: BorderSide(color: Colors.blue, width: 5)),
               child: ListTile(
                 title: Text('Apenas título e com data',
                 style: TextStyle(fontSize: 14)),
+                 isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,

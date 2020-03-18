@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:teste/widgets/navDrawer.dart';
+import 'package:badges/badges.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,39 +14,250 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         platform: TargetPlatform.iOS,
       ),
-      home: MyHomePage(title: 'Notícias'),
+      home: MenuPage(title: 'Menu'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class MenuPage extends StatefulWidget {
+  MenuPage({Key key, this.title}) : super(key: key);
   final String title;
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MenuPageState createState() => _MenuPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  
-  
-
+class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavDrawer(),
-      appBar: AppBar(
-        title: Text(widget.title),
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: <Color>[Colors.blue[800], Colors.blue[300]])),
+        drawer: NavDrawer(),
+        backgroundColor: Colors.grey[100],
+        appBar: AppBar(
+          title: Text(widget.title),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: <Color>[Colors.blue[800], Colors.blue[300]])),
+          ),
         ),
-      ),
-      body: Padding(
+        body: CustomScrollView(
+          slivers: <Widget>[
+            SliverPadding(
+              padding: const EdgeInsets.all(20),
+              
+              sliver: SliverGrid.count(
+                crossAxisSpacing: 15,
+                mainAxisSpacing: 15,
+                crossAxisCount: 3,
+                children: <Widget>[
+                  
+                  
+                  //FlatButton.icon(onPressed: null, icon: Icons.accessibility_new, label: "Ola mundo"),
+                  SizedBox.fromSize(
+                    // button width and height
+                  
+                    child: ClipRRect(
+                       
+                      borderRadius: BorderRadius.circular(15.0),
+                      
+                      child: Material(
+                        
+                        color: Colors.blue[200], // button color
+                        child: InkWell(
+                          
+                          splashColor: Colors.orange[300], // splash color
+                          onTap: () {}, // button pressed
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "Carteirinha",
+                                style: TextStyle(fontSize: 15),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(1.0),
+                              ),
+                              Icon(
+                                Icons.account_box,
+                                size: 40.0,
+                              ), // text
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                  ),
+                  SizedBox.fromSize(
+                    // button width and height
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15.0),
+                      child: Material(
+                        color: Colors.blue[200], // button color
+                        child: InkWell(
+                          splashColor: Colors.orange[300], // splash color
+                          onTap: () {}, // button pressed
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "Direitos",
+                                style: TextStyle(fontSize: 15),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(1.0),
+                              ),
+                              Icon(
+                                Icons.assignment_late,
+                                size: 40.0,
+                              ), // text
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                  ),
+                  SizedBox.fromSize(
+                    // button width and height
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15.0),
+                      child: Material(
+                        color: Colors.blue[200], // button color
+                        child: InkWell(
+                          splashColor: Colors.orange[300], // splash color
+                          onTap: () {}, // button pressed
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "Benefícios",
+                                style: TextStyle(fontSize: 15),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(1.0),
+                              ),
+                              Icon(
+                                Icons.cake,
+                                size: 40.0,
+                              ), // text
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                  ),
+                  SizedBox.fromSize(
+                    // button width and height
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15.0),
+                      child: Material(
+                        color: Colors.blue[200], // button color
+                        child: InkWell(
+                          splashColor: Colors.orange[300], // splash color
+                          onTap: () {}, // button pressed
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "Agenda",
+                                style: TextStyle(fontSize: 15),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(1.0),
+                              ),
+                              Icon(
+                                Icons.calendar_today,
+                                size: 40.0,
+                              ), // text
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                  ),
+                  SizedBox.fromSize(
+                    // button width and height
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15.0),
+                      child: Material(
+                        color: Colors.blue[200], // button color
+                        child: InkWell(
+                          splashColor: Colors.orange[300], // splash color
+                          onTap: () {}, // button pressed
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "Links",
+                                style: TextStyle(fontSize: 15),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(1.0),
+                              ),
+                              Icon(
+                                Icons.link,
+                                size: 40.0,
+                              ), // text
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                  ),
+                  SizedBox.fromSize(
+                    // button width and height
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(15.0),
+                      child: Material(
+                        color: Colors.blue[200], // button color
+                        child: InkWell(
+                          splashColor: Colors.orange[300], // splash color
+                          onTap: () {}, // button pressed
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Text(
+                                "Fale Conosco",
+                                style: TextStyle(fontSize: 15),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(1.0),
+                              ),
+                              Icon(
+                                Icons.person_outline,
+                                size: 40.0,
+                              ), // text
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    
+                  ),
+                  
+                ],
+              ),
+            ),
+          ],
+        )
+
+        /*Padding(
         padding: const EdgeInsets.all(8.0),
-        child: ListView(
+        child:
+        
+        ListView(
           children: const <Widget>[
             Card(
               child: ListTile(title: Text('Apenas o título')),
@@ -65,11 +277,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     "10/02/2020",
                     textAlign: TextAlign.end,
                     style: TextStyle(fontSize: 10),
-                  )),
+                    
+                  ),),
             ),
             Card(
               child: ListTile(
                 title: Text('Apenas título e com data'),
+                isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -125,10 +339,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ),
-      ),
-      
-    );
+      ),*/
+
+        );
   }
 }
-
-    

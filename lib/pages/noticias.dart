@@ -11,6 +11,7 @@ class _NoticiasState extends State<Noticias> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[100],
       drawer: NavDrawer(),
       appBar: AppBar(
         title: Text("Notícias"),
@@ -28,9 +29,13 @@ class _NoticiasState extends State<Noticias> {
           children: const <Widget>[
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                 backgroundImage: ExactAssetImage("imagens/pai_imag.jpg"), 
+                 backgroundColor: Colors.transparent 
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -44,9 +49,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading:CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/arvore.jpg"), 
+                  backgroundColor: Colors.transparent
+                ), 
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -60,9 +69,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/catedral.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -76,9 +89,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/pai_imag.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -92,9 +109,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/arvore.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -108,9 +129,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading:CircleAvatar(
+                 backgroundImage: ExactAssetImage("imagens/catedral.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -124,9 +149,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/arvore.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -140,9 +169,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                 backgroundImage: ExactAssetImage("imagens/pai_imag.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -156,9 +189,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading:CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/arvore.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -172,9 +209,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/catedral.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,
@@ -188,9 +229,13 @@ class _NoticiasState extends State<Noticias> {
             ),
             Card(
               child: ListTile(
-                leading: FlutterLogo(size: 56.0),
+                leading: CircleAvatar(
+                  backgroundImage: ExactAssetImage("imagens/arvore.jpg"), 
+                  backgroundColor: Colors.transparent
+                ),
                 title: Text('Apenas título e com data',
                     style: TextStyle(fontSize: 14)),
+                    isThreeLine: true,
                 trailing: Text(
                   "10/02/2020",
                   textAlign: TextAlign.right,

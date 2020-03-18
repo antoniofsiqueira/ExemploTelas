@@ -33,6 +33,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,
@@ -50,6 +51,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,
@@ -67,6 +69,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,
@@ -84,6 +87,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,
@@ -101,6 +105,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,
@@ -118,6 +123,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,
@@ -135,6 +141,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,
@@ -143,6 +150,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                   subtitle: Text(
                     "Pág. 38 Comunicado n 789, de 31 de Outubro de 2019...",
                     style: TextStyle(fontSize: 11),
+                    
                   ),
                 ),
               ),
@@ -152,6 +160,7 @@ class _PublicacoesDocState extends State<PublicacoesDoc> {
                 child: ListTile(
                   title: Text('Remoção - Classificação - Prévia',
                       style: TextStyle(fontSize: 14)),
+                       isThreeLine: true,
                   trailing: Text(
                     "30/01/2020",
                     textAlign: TextAlign.center,

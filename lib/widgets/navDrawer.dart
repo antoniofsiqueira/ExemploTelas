@@ -10,6 +10,7 @@ import '../pages/noticias.dart';
 import '../pages/notificacoes.dart';
 import '../pages/publicacoes_doc.dart';
 import '../pages/publicacoes_servidor.dart';
+//import 'package:teste/main.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -26,17 +27,15 @@ class NavDrawer extends StatelessWidget {
                 style: TextStyle(color: Colors.white, fontSize: 20),
               ),
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: <Color>[Colors.orange[800], Colors.orange[100]]),
-                  color: Colors.blue,
-                  /*image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage('assets/images/cover.jpg'))*/
-                      ),
+                gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: <Color>[Colors.blue[800], Colors.blue[300]]),
+                color: Colors.blue,
+              ),
             ),
           ),
+          
           ListTile(
             leading: Icon(Icons.account_box),
             title: Text('Carteirinha'),
@@ -50,7 +49,7 @@ class NavDrawer extends StatelessWidget {
             title: Text('Notícias'),
             trailing: Badge(
               badgeContent: Text("39"),
-              badgeColor: Colors.orange[200],
+              badgeColor: Colors.blue[200],
               // child: Icon(Icons.error_outline),
             ),
             onTap: () => {
@@ -63,7 +62,7 @@ class NavDrawer extends StatelessWidget {
             title: Text('Notificações'),
             trailing: Badge(
               badgeContent: Text("11"),
-              badgeColor: Colors.orange[200],
+              badgeColor: Colors.blue[200],
               //child: Icon(Icons.error_outline),
             ),
             onTap: () => {
@@ -86,7 +85,7 @@ class NavDrawer extends StatelessWidget {
             title: Text('Publicações do DOC'),
             trailing: Badge(
               badgeContent: Text("15"),
-              badgeColor: Colors.orange[200],
+              badgeColor: Colors.blue[200],
               //child: Icon(Icons.error_outline),
             ),
             onTap: () => {
@@ -106,8 +105,8 @@ class NavDrawer extends StatelessWidget {
             leading: Icon(Icons.calendar_today),
             title: Text('Agenda'),
             onTap: () => {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Agenda()))
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => CalendarApp()))
             },
           ),
           ListTile(
@@ -137,7 +136,10 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Sair'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => FaleConosco()))
+            },
           ),
         ]).toList(),
       ),
